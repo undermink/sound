@@ -20,7 +20,7 @@ extern "C" void mixeAudio(void *nichtVerwendet, Uint8 *stream, int laenge) {
 phase=0;
   for(int i=0;i<laenge/2;i++) {
     phase=float(frame)/FREQUENCY;
-    v=sin(phase*440*2)*15000;////+32768;
+    v=sin(phase*440)*15000+32768;
 
     stream[i*2+1]=*b;
     stream[i*2]=*a; //*b;
