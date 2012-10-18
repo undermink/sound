@@ -5,3 +5,5 @@ run
 > cmake -G "Unix Makefiles"
 > make
 > ./synthi
+
+It only produces a sinus-wave in A (440Hz)...
